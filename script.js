@@ -124,4 +124,7 @@ document.getElementById("retrait-confirm").onclick = function(){
 // Afficher les plans quand page chargée
 window.onload = function(){
   afficherPlans();
-};
+};function retourAccueil(pageId){
+  document.getElementById(pageId).style.display = "none";
+  document.getElementById("dashboard-page").style.display = "block";
+}

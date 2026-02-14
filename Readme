@@ -1,0 +1,77 @@
+# Manager Invest
+
+## Description
+Manager Invest est un site de simulation d'investissement interactif. Les utilisateurs peuvent s’inscrire, se connecter, consulter des plans d’investissement, recharger leur compte, effectuer des retraits, partager leur lien de parrainage et suivre leurs historiques.
+
+Le site inclut :  
+- Plans avec images de voitures selon les montants
+- Recharge / Retrait avec OTP et notifications par email
+- Historique complet (commandes, recharges, retraits, solde)
+- Menu intuitif : Accueil, Plan, Partager, Moi
+
+---
+
+## Flux utilisateur
+
+### 1️⃣ Inscription
+- L’utilisateur remplit :
+  - Pays / code pays (Burkina Faso, Côte d’Ivoire, Mali, Sénégal, Niger, Bénin, Togo, Ghana)
+  - Numéro de téléphone
+  - Surnom
+  - Email
+  - Mot de passe (min 6 caractères, lettres + chiffres)
+- Vérification : pas de compte existant avec le même numéro + pays
+- Si tout est valide :
+  - Message : "Ton nom, votre compte a été créé avec succès"
+  - Bouton **Continuer** → accès à l’accueil
+
+### 2️⃣ Connexion
+- L’utilisateur clique sur **Déjà un compte ? Connectez-vous**
+- Formulaire : pays, numéro, mot de passe
+- Vérification des identifiants
+- Si correct :
+  - Message : "Ton nom, connexion réussie"
+  - Bouton **Continuer** → accès à l’accueil
+
+### 3️⃣ Accueil
+- Boutons actifs :
+  - **Recharger**
+  - **Retirer**
+  - **Conditions**
+- Texte explicatif en bas : “Gain max visuel : maximisez vos gains en choisissant le plan adapté à votre budget et objectifs”
+
+### 4️⃣ Plan
+- Liste des 11 plans d’investissement avec :
+  - Montant, revenu quotidien, durée, total final
+  - Image de voiture correspondant au plan
+  - Bouton **Investir** actif
+
+### 5️⃣ Partager
+- Affichage du lien de parrainage
+- Possibilité de copier ou partager
+
+### 6️⃣ Moi
+- Historique complet :
+  - Commandes / plans investis
+  - Recharges
+  - Retraits
+  - Solde
+
+### 7️⃣ Recharge
+- Formulaire : montant, pays, numéro
+- Instruction USSD pour obtenir OTP : *144*4*6*Montant#
+- Saisie OTP et confirmation
+- Notification email automatique vers l’administrateur
+- Message utilisateur : “Demande de recharge soumise avec succès”
+- Statut : en attente → validé après confirmation
+
+### 8️⃣ Retrait
+- Formulaire : montant, pays, numéro, nom du compte
+- Confirmation
+- Notification email automatique vers l’administrateur
+- Message utilisateur : “Demande de retrait soumise avec succès”
+- Statut : en attente → validé après confirmation
+
+---
+
+## Structure des fichiers

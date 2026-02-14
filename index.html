@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manager Invest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page inscription -->
+<div id="inscription-page">
+  <h2>Inscription</h2>
+  <input type="text" id="inscription-pays" placeholder="Pays (ex: Burkina)">
+  <input type="text" id="inscription-numero" placeholder="Numéro de téléphone">
+  <input type="text" id="inscription-surnom" placeholder="Surnom">
+  <input type="email" id="inscription-email" placeholder="Email">
+  <input type="password" id="inscription-password" placeholder="Mot de passe">
+  <button id="inscription-submit">S'inscrire</button>
+  <p>Déjà un compte ? <span id="aller-connexion">Connectez-vous</span></p>
+</div>
+
+<!-- Page connexion -->
+<div id="connexion-page" style="display:none;">
+  <h2>Connexion</h2>
+  <input type="text" id="connexion-pays" placeholder="Pays">
+  <input type="text" id="connexion-numero" placeholder="Numéro de téléphone">
+  <input type="password" id="connexion-password" placeholder="Mot de passe">
+  <button id="connexion-submit">Se connecter</button>
+</div>
+
+<!-- Accueil / Dashboard -->
+<div id="dashboard-page" style="display:none;">
+  <h2>Accueil</h2>
+  <div id="menu-dashboard">
+    <button id="btn-recharger">Recharger</button>
+    <button id="btn-retirer">Retirer</button>
+    <button id="btn-conditions">Conditions</button>
+  </div>
+  <div id="texte-gain">Gain max visuel : Maximisez vos gains en choisissant le plan adapté à votre budget et vos objectifs.</div>
+</div>
+
+<!-- Plan -->
+<div id="plan-page" style="display:none;">
+  <h2>Plans d'investissement</h2>
+  <div id="plans-container"></div>
+</div>
+
+<!-- Partager -->
+<div id="partager-page" style="display:none;">
+  <h2>Partager</h2>
+  <p id="lien-parrainage">Votre lien de parrainage: <span id="lien-parrain">https://managerinvest.com?ref=XYZ</span></p>
+</div>
+
+<!-- Moi / Historique -->
+<div id="moi-page" style="display:none;">
+  <h2>Mon compte</h2>
+  <div id="historique-commandes"></div>
+  <div id="historique-recharges"></div>
+  <div id="historique-retraits"></div>
+  <div id="historique-solde"></div>
+</div>
+
+<!-- Recharge -->
+<div id="recharge-page" style="display:none;">
+  <h2>Recharger</h2>
+  <input type="text" id="recharge-montant" placeholder="Montant">
+  <input type="text" id="recharge-pays" placeholder="Pays">
+  <input type="text" id="recharge-numero" placeholder="Numéro">
+  <button id="recharge-continu">Continuer</button>
+  <div id="recharge-otp-page" style="display:none;">
+    <p>Composez le code *144*4*6*Montant# pour obtenir votre OTP</p>
+    <input type="text" id="recharge-otp" placeholder="Code OTP">
+    <button id="recharge-confirm">Confirmer</button>
+  </div>
+</div>
+
+<!-- Retrait -->
+<div id="retrait-page" style="display:none;">
+  <h2>Retirer</h2>
+  <input type="text" id="retrait-montant" placeholder="Montant">
+  <input type="text" id="retrait-pays" placeholder="Pays">
+  <input type="text" id="retrait-numero" placeholder="Numéro">
+  <input type="text" id="retrait-nomcompte" placeholder="Nom du compte">
+  <button id="retrait-confirm">Confirmer</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

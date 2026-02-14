@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAINMAXVISUEL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Bienvenue sur GAINMAXVISUEL</h1>
+  <p>Inscrivez-vous dès maintenant pour commencer à investir.</p>
+</header>
+
+<main>
+  <!-- Inscription -->
+  <div id="signup-section">
+    <h2>Créer un compte</h2>
+    <input type="text" id="signup-nom" placeholder="Nom complet">
+    <input type="text" id="signup-numero" placeholder="Numéro de téléphone">
+    <input type="password" id="signup-password" placeholder="Mot de passe (min 6 caractères)">
+    <button id="signup-btn">S'inscrire</button>
+    <p>Déjà un compte? <span id="goto-login">Connectez-vous</span></p>
+  </div>
+
+  <!-- Connexion -->
+  <div id="login-section" style="display:none;">
+    <h2>Connexion</h2>
+    <input type="text" id="login-numero" placeholder="Numéro de téléphone">
+    <input type="password" id="login-password" placeholder="Mot de passe">
+    <button id="login-btn">Se connecter</button>
+    <p><span id="forgot-password">Mot de passe oublié</span></p>
+  </div>
+
+  <!-- Menu principal -->
+  <div id="main-menu" style="display:none;">
+    <nav>
+      <button class="menu-btn" id="menu-accueil">Accueil</button>
+      <button class="menu-btn" id="menu-plan">Plans</button>
+      <button class="menu-btn" id="menu-partager">Partager</button>
+      <button class="menu-btn" id="menu-moi">Moi</button>
+    </nav>
+
+    <!-- Accueil : recharge / retrait / conditions -->
+    <div id="accueil-section" style="display:none;">
+      <button class="action-btn" id="btn-recharge">Recharge</button>
+      <button class="action-btn" id="btn-retrait">Retrait</button>
+      <button class="action-btn" id="btn-conditions">Conditions</button>
+    </div>
+
+    <!-- Plans d'investissement -->
+    <div id="plan-section" style="display:none;"></div>
+
+    <!-- Partager -->
+    <div id="partager-section" style="display:none;"></div>
+
+    <!-- Moi / Historique / Commandes -->
+    <div id="moi-section" style="display:none;"></div>
+  </div>
+</main>
+
+<!-- Assistance IA -->
+<div id="chat-assist-container">
+  <div id="chat-toggle">💬 Assistance</div>
+  <div id="chat-box" style="display:none;">
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Posez votre question..."/>
+    <button id="chat-send">Envoyer</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

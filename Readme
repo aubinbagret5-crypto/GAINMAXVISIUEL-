@@ -5,7 +5,7 @@ Manager Invest est un site de simulation d'investissement interactif. Les utilis
 
 Le site inclut :  
 - Plans avec images de voitures selon les montants
-- Recharge / Retrait avec OTP et notifications par email
+- Recharge / Retrait avec OTP 
 - Historique complet (commandes, recharges, retraits, solde)
 - Menu intuitif : Accueil, Plan, Partager, Moi
 
@@ -61,14 +61,12 @@ Le site inclut :
 - Formulaire : montant, pays, numéro
 - Instruction USSD pour obtenir OTP : *144*4*6*Montant#
 - Saisie OTP et confirmation
-- Notification email automatique vers l’administrateur
 - Message utilisateur : “Demande de recharge soumise avec succès”
 - Statut : en attente → validé après confirmation
 
 ### 8️⃣ Retrait
 - Formulaire : montant, pays, numéro, nom du compte
 - Confirmation
-- Notification email automatique vers l’administrateur
 - Message utilisateur : “Demande de retrait soumise avec succès”
 - Statut : en attente → validé après confirmation
 

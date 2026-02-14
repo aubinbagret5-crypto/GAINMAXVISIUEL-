@@ -22,7 +22,24 @@
     <input type="password" id="signup-password" placeholder="Mot de passe (min 6 caractères)">
     <button id="signup-btn">S'inscrire</button>
     <p>Déjà un compte? <span id="goto-login">Connectez-vous</span></p>
-  </div>
+  </div><div id="signup-form">
+  <h3>Inscription</h3>
+  <input type="text" id="signup-name" placeholder="Nom">
+  <input type="text" id="signup-email" placeholder="Email">
+  <input type="password" id="signup-password" placeholder="Mot de passe">
+  <button id="btn-signup">S'inscrire</button>
+
+  <!-- Lien pour aller à la connexion -->
+  <p>Déjà un compte ? <span id="go-login" style="color:blue; cursor:pointer;">Connectez-vous</span></p>
+</div>
+
+<!-- Formulaire de connexion (au départ caché) -->
+<div id="login-form" style="display:none;">
+  <h3>Connexion</h3>
+  <input type="text" id="login-email" placeholder="Email ou Nom d'utilisateur">
+  <input type="password" id="login-password" placeholder="Mot de passe">
+  <button id="btn-login">Se connecter</button>
+</div>
 
   <!-- Connexion -->
   <div id="login-form">
